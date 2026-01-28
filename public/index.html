@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MahadevMinds DevOps Mini Project</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>MahadevMinds DevOps Mini Project</h1>
+      <p class="subtitle">Get interview-ready in style ✨</p>
+      <form id="interview-form" autocomplete="off">
+        <label for="name">Your Name</label>
+        <input id="name" name="name" type="text" placeholder="e.g., Aarya" required />
+
+        <label for="skill">Your Top Skill</label>
+        <input id="skill" name="skill" type="text" placeholder="e.g., Kubernetes" required />
+
+        <button id="ready-btn" type="submit">I am ready for my interview</button>
+      </form>
+    </section>
+  </main>
+
+  <section id="celebration" class="celebration" aria-hidden="true">
+    <div class="message-wrap">
+      <h2 id="wish-line" class="wish">All the best!</h2>
+      <p id="detail-line" class="detail"></p>
+      <button id="again-btn" class="again">Run it again</button>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
